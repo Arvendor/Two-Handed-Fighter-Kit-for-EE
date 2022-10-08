@@ -1,0 +1,31 @@
+Based on PF:WotR or the PF:1e implementation of the Two Handed Fighter archetype:
+
+TWO-HANDED FIGHTER: Some fighters focus their efforts on finding the biggest, heaviest, most imposing weapon they can find and training to manage and harness the weight of their massive weapons for maximum impact. These fighting school benefits only apply when using two-handed weapons.
+
+ADVANTAGES:
+
+- Gains an inherent +2 bonus to weapon speed factor at level 1.
+- Gains Heavy Weapon Training at level 5.
+
+HEAVY WEAPON TRAINING: Your familiarity with weapons grants you a permanent +1 to THAC0 and damage. This bonus increases by 1 every 5 levels.
+
+- Gains Backswing at level 7.
+
+BACKSWING: Becoming accustomed to the weight of heavy weapons has taught you how wield them more efficiently. You gain a permanent +1 bonus to APR.
+
+- May use the Piledriver ability three times per day at level 11.
+
+PILEDRIVER: Leveraging the weight of your weapon you attempt to trip your opponent. For 1 round every hit forces the target to succeed on a saving throw vs breath or be knocked unconscious for 1 round.
+
+- May use the Greater Power Attack ability once per day at level 15 and gains an additional use every five levels therafter.
+
+GREATER POWER ATTACK: You have learned to focus your immense strength into a devestating assault. For the next round all of your attacks inflict 100% more damage.
+
+- Gains the Devastating Blow ability at level 19.
+
+DEVASTATING BLOW: There is not a single creature that you cannot kill in a single blow. All of your attacks gain the Vorpal trait (5% to instantly slay opponent outright, no save).
+
+DISADVANTAGES:
+- May only become proficient in ranged and one-handed weapons.
+- May not become proficient in any fighting styles other than two-handed style.
+- May not wear armor heavier than splint

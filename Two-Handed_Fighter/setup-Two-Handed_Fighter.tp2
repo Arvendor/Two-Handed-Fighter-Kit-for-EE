@@ -1,0 +1,122 @@
+BACKUP "Two-Handed_Fighter/backup"
+AUTHOR "Arvendor"
+VERSION "v0.1"
+
+BEGIN "Two-Handed Fighter kit for Fighters"
+    INCLUDE "Two-Handed_Fighter/lib/fl#add_kit_ee.tpa"
+    ADD_KIT ~AW2HFG~
+        ~AW2HFG                5           5           5           5           5           5           5           5~ //BG1 Profs
+        ~AW2HFG 1 1 1 1 1 1 1 1 1 1 1 1 5 1 1 1 1 1 5 5 1 1 5 1 1 1 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //BG2 Profs
+        ~AW2HFG               9       3       3       3       3       3~ //Min Stat
+        ~AW2HFG               0       0       0       0       0       0~ 
+        ~AW2HFG              17       0       0       0       0       0~ //Dual Class into
+        ~AW2HFG              15       0       0       0       0       0~ //Dual Class Out of
+        //                     LG      LN      LE      NG      TN      NE      CG      CN      CE
+        ~AW2HFG                1       1       1       1       1       1       1       1       1~ //Alignment
+        //       F  C  M  T  D  R
+        ~AW2HFG  0  1  1  1  1  0~ //Dual Classing restrictions
+        ~Two-Handed_Fighter/tables/AW2HFGCL.2da~
+        ~K_F_H   K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~ // No Racial Kit restrictions
+        ~0x40000000       2~ 
+        ~AW2HFG~
+        ~* * * BAG28 * * * BOOT01 AMUL17 * * AROW11,80 * * * * * DAGG12 SW1H28 *~
+        SAY ~two-handed fighter~
+        SAY ~Two-Handed Fighter~
+        SAY ~TWO-HANDED FIGHTER: Some fighters focus their efforts on finding the biggest, heaviest, most imposing weapon they can find and training to manage and harness the weight of their massive weapons for maximum impact. However this comes at the cost of expertise in other methods of fighting.
+
+ADVANTAGES:
+- Gains an inherent -2 bonus to weapon speed factor at level 1.
+- Gains Heavy Weapon Training at level 5.
+
+HEAVY WEAPON TRAINING: Your familiarity with weapons grants you a permanent +1 to THAC0 and damage. This bonus increases by 1 every 5 levels.
+
+- Gains Backswing at level 7.
+
+BACKSWING: Becoming accustomed to the weight of heavy weapons has taught you how wield them more efficiently. You gain a permanent +1 bonus to APR.
+
+- May use the Piledriver ability three times per day at level 11.
+
+PILEDRIVER: Leveraging the weight of your weapon you attempt to trip your opponent. For 1 round every hit forces the target to succeed on a saving throw vs wands or be knocked unconscious for 1 round.
+
+- May use the Greater Power Attack ability once per day at level 15 and gains an additional use every 5 levels therafter.
+
+GREATER POWER ATTACK: You have learned to focus your immense strength into a devestating assault. For the next round all of your attacks inflict 100% more damage.
+
+- Gains the Devastating Blow ability at level 19.
+
+DEVASTATING BLOW: A true warrior knows how to end a battle in a single blow. All of your attacks gain the vorpal trait (5% chance to instantly slay opponents outright with no saving throw).
+
+DISADVANTAGES:
+- May only become proficient in ranged and one-handed weapons.
+- May not become proficient in any fighting styles other than two-handed style.
+- May not wear armor heavier than splint~
+
+    LAF fl#add_kit_ee
+        INT_VAR
+            briefdesc = RESOLVE_STR_REF (~TWO-HANDED FIGHTER: Some fighters focus their efforts on finding the biggest, heaviest, most imposing weapon they can find and training to manage and harness the weight of their massive weapons for maximum impact. However this comes at the cost of expertise in other methods of fighting.
+
+ADVANTAGES:
+- Gains an inherent -2 bonus to weapon speed factor at level 1.
+- Gains Heavy Weapon Training at level 5.
+
+HEAVY WEAPON TRAINING: Your familiarity with weapons grants you a permanent +1 to THAC0 and damage. This bonus increases by 1 every 5 levels.
+
+- Gains Backswing at level 7.
+
+BACKSWING: Becoming accustomed to the weight of heavy weapons has taught you how wield them more efficiently. You gain a permanent +1 bonus to APR.
+
+- May use the Piledriver ability three times per day at level 11.
+
+PILEDRIVER: Leveraging the weight of your weapon you attempt to trip your opponent. For 1 round every hit forces the target to succeed on a saving throw vs wands or be knocked unconscious for 1 round.
+
+- May use the Greater Power Attack ability once per day at level 15 and gains an additional use every five levels therafter.
+
+GREATER POWER ATTACK: You have learned to focus your immense strength into a devestating assault. For the next round all of your attacks inflict 100% more damage.
+
+- Gains the Devastating Blow ability at level 19.
+
+DEVASTATING BLOW: A true warrior knows how to end a battle in a single blow. All of your attacks gain the vorpal trait (5% chance to instantly slay opponents outright with no saving throw).
+
+DISADVANTAGES:
+- May only become proficient in ranged and one-handed weapons.
+- May not become proficient in any fighting styles other than two-handed style.
+- May not wear armor heavier than splint~)
+            fallen = 0
+            fallen_notice = RESOLVE_STR_REF (~Broken Oath: Conquest.~)
+        STR_VAR
+            kit_name = ~AW2HFG~
+            //backstab = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+            clswpbon = ~1 0 3~
+            //Bits, Minor, Major, Leather, Metal
+            clascolr = ~81 119 83 23 66~
+            numwslot = ~4~
+            clsrcreq = ~1 1 1 1 1 1 1~
+            clasthac = ~0~
+            //sneakatt = ~1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1~
+            //crippstr = ~0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+END
+
+COPY    "Two-Handed_Fighter/spl/AW2HFG0.SPL" "override"
+    SAY NAME1 ~Backswing~
+    SAY NAME1 ~Backswing~
+
+COPY    "Two-Handed_Fighter/eff/AW2HFG01.EFF" "override"
+COPY    "Two-Handed_Fighter/spl/AW2HFG1.SPL" "override"
+    SAY NAME1 ~Devastating Blow~
+    SAY NAME1 ~Devastating Blow~
+
+COPY    "Two-Handed_Fighter/spl/AW2HFG2.SPL" "override"
+    SAY NAME1 ~Greater Power Attack~
+    SAY NAME1 ~Greater Power Attack~
+    SAY UNIDENTIFIED_DESC ~GREATER POWER ATTACK: You have learned to focus your immense strength into a devastating assault. For the next round all of your attacks inflict 100% more damage.~
+
+//COPY    "Two-Handed_Fighter/spl/AW2HFG3D.SPL" "override"
+COPY    "Two-Handed_Fighter/eff/AW2HFG03.EFF" "override"
+COPY    "Two-Handed_Fighter/spl/AW2HFG3.SPL" "override"
+    SAY NAME1 ~Piledriver~
+    SAY NAME1 ~Piledriver~
+    SAY UNIDENTIFIED_DESC ~PILEDRIVER: Leveraging the weight of your weapon you attempt to trip your opponent. For 1 round every hit forces the target to succeed on a saving throw vs wands or be knocked prone for 1 round.~
+
+//HLA
+COPY    "Two-Handed_Fighter/tables/LUAW2HFG.2da" "override" //Add HLA Table
+
